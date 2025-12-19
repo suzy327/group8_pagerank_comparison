@@ -1,0 +1,8 @@
+metric_name,unit,description,example_command_giraph,example_command_mapreduce
+total_execution_time,秒,从作业提交到完成的总耗时（Wall-clock time）,"grep ""Total execution time"" job.log | awk '{print $5}'",hadoop job -status JOB_ID | grep ""Run time"" | awk '{print $4/1000}'
+avg_iteration_time,秒,单次迭代平均耗时,"grep ""Superstep"" job.log | awk '{sum+=$5} END {print sum/NR}'",total_execution_time / iterations_to_converge
+network_communication,MB,累计网络传输数据量（Giraph=节点间消息；MapReduce=Shuffle数据）,"grep ""Bytes sent"" job.log | awk '{sum+=$3} END {print sum/1048576}'",hadoop job -history JOB_PATH | grep ""Map input records"" | awk '{sum+=$1*100} END {print sum/1048576}'
+peak_memory_usage,GB,单节点最大内存占用,yarn logs -applicationId APP_ID | grep ""Memory Used"" | awk '{print $3}' | sort -nr | head -1 | awk '{print $1/1024}',yarn logs -applicationId APP_ID | grep ""Memory Used"" | awk '{print $3}' | sort -nr | head -1 | awk '{print $1/1024}'
+iterations_to_converge,次,达到收敛阈值（Δ<0.0001）的迭代次数,grep ""Superstep"" job.log | wc -l,hadoop job -history JOB_ID | grep ""Reduce"" | grep ""SUCCEEDED"" | wc -l
+convergence_rate,%/iter,每轮迭代的收敛速度,100 * (initial_diff - final_diff) / (iterations * initial_diff),100 * (initial_diff - final_diff) / (iterations * initial_diff)
+cpu_utilization,%,作业运行期间平均CPU使用率,sar -u 1 10 | awk 'NR>3 {sum+=$3} END {print sum/10}',sar -u 1 10 | awk 'NR>3 {sum+=$3} END {print sum/10}'

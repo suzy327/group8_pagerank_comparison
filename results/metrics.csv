@@ -1,0 +1,1 @@
+algorithm,dataset,job_id,total_execution_time,avg_iteration_time,network_communication,peak_memory_usage,iterations_to_converge,convergence_rate,cpu_utilization
