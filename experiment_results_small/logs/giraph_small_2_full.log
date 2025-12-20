@@ -1,0 +1,11 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/hadoop/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/hadoop/share/hadoop/yarn/lib/giraph.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+2025-12-20 22:36:20,838 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at master/172.22.247.106:8032
+File /tmp/logs/root/logs-tfile/application_1766241325969_0001 does not exist.
+File /tmp/logs/root/bucket-logs-tfile/0001/application_1766241325969_0001 does not exist.
+
+Can not find any log file matching the pattern: [ALL] for the application: application_1766241325969_0001
+Can not find the logs for the application: application_1766241325969_0001 with the appOwner: root

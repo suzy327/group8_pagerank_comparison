@@ -1,0 +1,2 @@
+algorithm,dataset,job_id,total_execution_time,avg_iteration_time,network_communication,peak_memory_usage,iterations_to_converge,final_diff,cpu_utilization
+giraph,small,giraph_small_{1},38.00s,0.86s,1947.56MB,3.22GB,44,0.000000,15.96%

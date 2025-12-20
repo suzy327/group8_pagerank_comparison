@@ -30,10 +30,21 @@ public class PageRankGiraph extends BasicComputation<LongWritable, DoubleWritabl
             // 获取上一轮的总误差
             double globalDiff = ((DoubleWritable) getAggregatedValue("sum_diff")).get();
             
-            // 判断收敛 (从第2轮开始判断)
+            // 逻辑修正：
+            // 1. 如果收敛，Master 会通过 haltComputation 停止，这里 Worker 配合 voteToHalt
+            // if (getSuperstep() > 1 && globalDiff < THRESHOLD) {
+            //     vertex.voteToHalt();
+            // } 
+            // // 🔴 2. 这里的硬限制从 100 改成 500
+            // else if (getSuperstep() < 500) { 
+            //     sendMessageToAllEdges(vertex, new DoubleWritable(newPr / vertex.getNumEdges()));
+            // } else {
+            //     vertex.voteToHalt();
+            // }
             if (getSuperstep() > 1 && globalDiff < THRESHOLD) {
                 vertex.voteToHalt();
-            } else if (getSuperstep() < 100) { // 最大100轮兜底
+            } 
+            else if (getSuperstep() < 500) { 
                 sendMessageToAllEdges(vertex, new DoubleWritable(newPr / vertex.getNumEdges()));
             } else {
                 vertex.voteToHalt();

@@ -49,10 +49,20 @@ public class PageRankMapReduce {
     }
 
     public static void main(String[] args) throws Exception {
+        if (args.length < 2) {
+            System.err.println("Usage: PageRankMapReduce <input path> <output path>");
+            System.exit(-1);
+        }
+
         String inputBase = args[0];
         String outputBase = args[1];
+        
+        // 🔴 改动1：变量初始化，最大循环设为 500
         int i = 0;
-        while (i < 50) {
+        int MAX_ITERATIONS = 500;
+        double finalDiff = 0.0;
+
+        while (i < MAX_ITERATIONS) {
             Configuration conf = new Configuration();
             Job job = Job.getInstance(conf, "MR Iter " + i);
             job.setJarByClass(PageRankMapReduce.class);
@@ -70,10 +80,23 @@ public class PageRankMapReduce {
 
             long diffLong = job.getCounters().findCounter(COUNTER.DIFF_X_100000).getValue();
             double diff = diffLong / 100000.0;
+            
+            // 🔴 改动2：实时记录 diff 并打印
+            finalDiff = diff;
             System.out.println("Iteration " + i + " Diff: " + diff);
 
-            if (i > 0 && diff < 0.0001) break;
+            // 🔴 改动3：收敛判定 + 明确打印 Final Diff
+            if (i > 0 && diff < 0.0001) {
+                System.out.println("Final Diff: " + diff); // <--- LogAnalyzer 需要这一行
+                System.out.println("✅ Converged at iteration " + i);
+                break;
+            }
             i++;
+        }
+        
+        // 🔴 改动4：如果跑满了 500 次还没收敛，打印最后的 diff
+        if (i == MAX_ITERATIONS) {
+             System.out.println("⚠️ Reached max iterations ("+MAX_ITERATIONS+") without full convergence. Final Diff: " + finalDiff);
         }
     }
 }

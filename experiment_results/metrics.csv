@@ -1,11 +1,1 @@
-algorithm,dataset,job_id,total_execution_time,avg_iteration_time,network_communication,peak_memory_usage,iterations_to_converge,convergence_rate,cpu_utilization
-giraph,small,giraph_small_1,39.00s,0.39s,1431.93MB,3.12GB,100,99.90%,17.44%
-giraph,small,giraph_small_2,40.00s,0.40s,1473.43MB,3.59GB,100,99.90%,28.49%
-giraph,small,giraph_small_3,39.00s,0.39s,1441.93MB,3.13GB,100,99.90%,12.73%
-mapreduce,small,mapreduce_small_1,954.00s,21.68s,35757.01MB,4.10GB,44,99.90%,13.63%
-mapreduce,small,mapreduce_small_2,961.00s,21.84s,36567.83MB,4.20GB,44,99.90%,13.41%
-mapreduce,small,mapreduce_small_3,955.00s,21.70s,36880.56MB,4.09GB,44,99.90%,11.67%
-giraph,medium,giraph_medium_1,71.00s,0.71s,2755.35MB,3.30GB,100,99.90%,7.58%
-giraph,medium,giraph_medium_2,69.00s,0.69s,2688.07MB,3.96GB,100,99.90%,14.40%
-giraph,medium,giraph_medium_3,70.00s,0.70s,2735.41MB,3.15GB,100,99.90%,7.14%
-mapreduce,medium,mapreduce_medium_1,1521.00s,30.42s,60850.92MB,4.27GB,50,99.90%,12.09%
+algorithm,dataset,job_id,total_execution_time,avg_iteration_time,network_communication,peak_memory_usage,iterations_to_converge,final_diff,cpu_utilization

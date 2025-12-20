@@ -1,0 +1,849 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/hadoop/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/hadoop/share/hadoop/yarn/lib/giraph.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+2025-12-20 19:52:46,484 INFO utils.ConfigurationUtils: No edge input format specified. Ensure your InputFormat does not require one.
+2025-12-20 19:52:46,488 INFO utils.ConfigurationUtils: No edge output format specified. Ensure your OutputFormat does not require one.
+2025-12-20 19:52:46,504 INFO utils.ConfigurationUtils: Setting custom argument [giraph.SplitMasterWorker] to [false] in GiraphConfiguration
+2025-12-20 19:52:46,631 INFO yarn.GiraphYarnClient: Final output path is: hdfs://master:9000/user/root/output/giraph_large_2
+2025-12-20 19:52:46,710 INFO yarn.GiraphYarnClient: Running Client
+2025-12-20 19:52:46,727 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at master/172.22.247.106:8032
+2025-12-20 19:52:46,943 INFO yarn.GiraphYarnClient: Got node report from ASM for, nodeId=slave2:39771, nodeAddress slave2:8042, nodeRackName /default-rack, nodeNumContainers 0
+2025-12-20 19:52:46,967 INFO conf.Configuration: resource-types.xml not found
+2025-12-20 19:52:46,967 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2025-12-20 19:52:46,976 INFO yarn.GiraphYarnClient: Got node report from ASM for, nodeId=master:40851, nodeAddress master:8042, nodeRackName /default-rack, nodeNumContainers 0
+2025-12-20 19:52:46,977 INFO yarn.GiraphYarnClient: Got node report from ASM for, nodeId=slave1:46843, nodeAddress slave1:8042, nodeRackName /default-rack, nodeNumContainers 0
+2025-12-20 19:52:46,977 INFO yarn.GiraphYarnClient: Defaulting per-task heap size to 1024MB.
+2025-12-20 19:52:46,977 INFO yarn.GiraphYarnClient: Obtained new Application ID: application_1766231546618_0001
+2025-12-20 19:52:46,977 INFO Configuration.deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2025-12-20 19:52:46,989 INFO yarn.GiraphYarnClient: Set the environment for the application master
+2025-12-20 19:52:46,990 INFO yarn.GiraphYarnClient: Environment for AM :{CLASSPATH=${CLASSPATH}:./*:$HADOOP_CONF_DIR:$HADOOP_COMMON_HOME/share/hadoop/common/*:$HADOOP_COMMON_HOME/share/hadoop/common/lib/*:$HADOOP_HDFS_HOME/share/hadoop/hdfs/*:$HADOOP_HDFS_HOME/share/hadoop/hdfs/lib/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*:$HADOOP_YARN_HOME/share/hadoop/yarn/*:$HADOOP_YARN_HOME/share/hadoop/yarn/lib/*:./*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*}
+2025-12-20 19:52:46,991 INFO yarn.GiraphYarnClient: buildLocalResourceMap ....
+2025-12-20 19:52:47,915 INFO yarn.YarnUtils: Registered file in LocalResources :: hdfs://master:9000/user/root/giraph_yarn_jar_cache/application_1766231546618_0001/giraph-conf.xml
+2025-12-20 19:52:47,918 INFO yarn.GiraphYarnClient: LIB JARS :
+2025-12-20 19:52:47,918 INFO yarn.YarnUtils: Class path name .
+2025-12-20 19:52:47,918 INFO yarn.YarnUtils: base path checking .
+2025-12-20 19:52:47,923 INFO yarn.YarnUtils: Class path name /usr/local/hadoop
+2025-12-20 19:52:47,923 INFO yarn.YarnUtils: base path checking /usr/local/hadoop
+2025-12-20 19:52:48,129 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/etc/hadoop
+2025-12-20 19:52:48,130 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/etc/hadoop
+2025-12-20 19:52:48,130 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/*
+2025-12-20 19:52:48,130 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib
+2025-12-20 19:52:48,131 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/*
+2025-12-20 19:52:48,131 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common
+2025-12-20 19:52:48,132 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs
+2025-12-20 19:52:48,132 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs
+2025-12-20 19:52:48,134 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/*
+2025-12-20 19:52:48,134 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib
+2025-12-20 19:52:48,134 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/*
+2025-12-20 19:52:48,135 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs
+2025-12-20 19:52:48,136 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/*
+2025-12-20 19:52:48,136 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce
+2025-12-20 19:52:48,137 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn
+2025-12-20 19:52:48,137 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn
+2025-12-20 19:52:48,138 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/*
+2025-12-20 19:52:48,138 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib
+2025-12-20 19:52:48,139 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/*
+2025-12-20 19:52:48,139 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/audience-annotations-0.5.0.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/audience-annotations-0.5.0.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/avro-1.7.7.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/avro-1.7.7.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/checker-qual-2.5.2.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/checker-qual-2.5.2.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-beanutils-1.9.4.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-beanutils-1.9.4.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-cli-1.2.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-cli-1.2.jar
+2025-12-20 19:52:48,140 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-codec-1.15.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-codec-1.15.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-collections-3.2.2.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-collections-3.2.2.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-compress-1.21.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-compress-1.21.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-configuration2-2.8.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-configuration2-2.8.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-daemon-1.0.13.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-daemon-1.0.13.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-io-2.8.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-io-2.8.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-lang3-3.12.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-lang3-3.12.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-logging-1.1.3.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-logging-1.1.3.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-math3-3.1.1.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-math3-3.1.1.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-net-3.9.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-net-3.9.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/commons-text-1.10.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/commons-text-1.10.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/curator-client-5.2.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/curator-client-5.2.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/curator-framework-5.2.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/curator-framework-5.2.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/curator-recipes-5.2.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/curator-recipes-5.2.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/dnsjava-2.1.7.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/dnsjava-2.1.7.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/failureaccess-1.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/failureaccess-1.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/gson-2.9.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/gson-2.9.0.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/guava-27.0-jre.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/guava-27.0-jre.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/hadoop-annotations-3.3.6.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/hadoop-annotations-3.3.6.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/hadoop-auth-3.3.6.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/hadoop-auth-3.3.6.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/hadoop-shaded-guava-1.1.1.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/hadoop-shaded-guava-1.1.1.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/httpclient-4.5.13.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/httpclient-4.5.13.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/httpcore-4.4.13.jar
+2025-12-20 19:52:48,141 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/httpcore-4.4.13.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/j2objc-annotations-1.1.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/j2objc-annotations-1.1.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jackson-annotations-2.12.7.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jackson-annotations-2.12.7.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jackson-core-2.12.7.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jackson-core-2.12.7.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jackson-databind-2.12.7.1.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jackson-databind-2.12.7.1.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jakarta.activation-api-1.2.1.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jakarta.activation-api-1.2.1.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jaxb-api-2.2.11.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jaxb-api-2.2.11.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jcip-annotations-1.0-1.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jcip-annotations-1.0-1.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jersey-core-1.19.4.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jersey-core-1.19.4.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jersey-json-1.20.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jersey-json-1.20.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jersey-server-1.19.4.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jersey-server-1.19.4.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jersey-servlet-1.19.4.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jersey-servlet-1.19.4.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jettison-1.5.4.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jettison-1.5.4.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jetty-http-9.4.51.v20230217.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jetty-http-9.4.51.v20230217.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jetty-io-9.4.51.v20230217.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jetty-io-9.4.51.v20230217.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jetty-security-9.4.51.v20230217.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jetty-security-9.4.51.v20230217.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jetty-server-9.4.51.v20230217.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jetty-server-9.4.51.v20230217.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jetty-servlet-9.4.51.v20230217.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jetty-servlet-9.4.51.v20230217.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jetty-util-9.4.51.v20230217.jar
+2025-12-20 19:52:48,142 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jetty-util-9.4.51.v20230217.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jetty-util-ajax-9.4.51.v20230217.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jetty-util-ajax-9.4.51.v20230217.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jetty-webapp-9.4.51.v20230217.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jetty-webapp-9.4.51.v20230217.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jetty-xml-9.4.51.v20230217.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jetty-xml-9.4.51.v20230217.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jsch-0.1.55.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jsch-0.1.55.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jsp-api-2.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jsp-api-2.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jsr305-3.0.2.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jsr305-3.0.2.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jsr311-api-1.1.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jsr311-api-1.1.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/jul-to-slf4j-1.7.36.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/jul-to-slf4j-1.7.36.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerb-admin-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerb-admin-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerb-client-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerb-client-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerb-common-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerb-common-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerb-core-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerb-core-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerb-crypto-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerb-crypto-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerb-identity-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerb-identity-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerb-server-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerb-server-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerb-util-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerb-util-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerby-asn1-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerby-asn1-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerby-config-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerby-config-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerby-pkix-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerby-pkix-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerby-util-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerby-util-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/kerby-xdr-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/kerby-xdr-1.0.1.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/metrics-core-3.2.4.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/metrics-core-3.2.4.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-all-4.1.89.Final.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-all-4.1.89.Final.jar
+2025-12-20 19:52:48,143 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-buffer-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-buffer-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-dns-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-dns-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-haproxy-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-haproxy-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-http2-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-http2-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-http-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-http-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-memcache-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-memcache-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-mqtt-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-mqtt-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-redis-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-redis-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-smtp-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-smtp-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-socks-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-socks-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-stomp-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-stomp-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-codec-xml-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-codec-xml-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-common-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-common-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-handler-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-handler-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-handler-proxy-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-handler-proxy-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-handler-ssl-ocsp-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-handler-ssl-ocsp-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-resolver-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-resolver-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-resolver-dns-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-resolver-dns-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-resolver-dns-classes-macos-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-resolver-dns-classes-macos-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-resolver-dns-native-macos-4.1.89.Final-osx-aarch_64.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-resolver-dns-native-macos-4.1.89.Final-osx-aarch_64.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-resolver-dns-native-macos-4.1.89.Final-osx-x86_64.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-resolver-dns-native-macos-4.1.89.Final-osx-x86_64.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-transport-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-transport-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-transport-classes-epoll-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-transport-classes-epoll-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-transport-classes-kqueue-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-transport-classes-kqueue-4.1.89.Final.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-transport-native-epoll-4.1.89.Final-linux-aarch_64.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-transport-native-epoll-4.1.89.Final-linux-aarch_64.jar
+2025-12-20 19:52:48,144 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-transport-native-epoll-4.1.89.Final-linux-x86_64.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-transport-native-epoll-4.1.89.Final-linux-x86_64.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-transport-native-kqueue-4.1.89.Final-osx-aarch_64.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-transport-native-kqueue-4.1.89.Final-osx-aarch_64.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-transport-native-kqueue-4.1.89.Final-osx-x86_64.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-transport-native-kqueue-4.1.89.Final-osx-x86_64.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-transport-native-unix-common-4.1.89.Final.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-transport-native-unix-common-4.1.89.Final.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-transport-rxtx-4.1.89.Final.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-transport-rxtx-4.1.89.Final.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-transport-sctp-4.1.89.Final.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-transport-sctp-4.1.89.Final.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/netty-transport-udt-4.1.89.Final.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/netty-transport-udt-4.1.89.Final.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/nimbus-jose-jwt-9.8.1.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/nimbus-jose-jwt-9.8.1.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/paranamer-2.3.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/paranamer-2.3.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/protobuf-java-2.5.0.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/protobuf-java-2.5.0.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/re2j-1.1.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/re2j-1.1.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/reload4j-1.2.22.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/reload4j-1.2.22.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/slf4j-api-1.7.36.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/slf4j-api-1.7.36.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/snappy-java-1.1.8.2.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/snappy-java-1.1.8.2.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/stax2-api-4.2.1.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/stax2-api-4.2.1.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/token-provider-1.0.1.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/token-provider-1.0.1.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/woodstox-core-5.4.0.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/woodstox-core-5.4.0.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/zookeeper-3.6.3.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/zookeeper-3.6.3.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib/zookeeper-jute-3.6.3.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib/zookeeper-jute-3.6.3.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/hadoop-common-3.3.6.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/hadoop-common-3.3.6.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/hadoop-common-3.3.6-tests.jar
+2025-12-20 19:52:48,145 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/hadoop-common-3.3.6-tests.jar
+2025-12-20 19:52:48,146 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/hadoop-kms-3.3.6.jar
+2025-12-20 19:52:48,146 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/hadoop-kms-3.3.6.jar
+2025-12-20 19:52:48,146 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/hadoop-nfs-3.3.6.jar
+2025-12-20 19:52:48,146 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/hadoop-nfs-3.3.6.jar
+2025-12-20 19:52:48,146 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/hadoop-registry-3.3.6.jar
+2025-12-20 19:52:48,146 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/hadoop-registry-3.3.6.jar
+2025-12-20 19:52:48,146 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/jdiff
+2025-12-20 19:52:48,146 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/jdiff
+2025-12-20 19:52:48,146 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/lib
+2025-12-20 19:52:48,146 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/lib
+2025-12-20 19:52:48,147 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/sources
+2025-12-20 19:52:48,147 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/sources
+2025-12-20 19:52:48,147 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/common/webapps
+2025-12-20 19:52:48,147 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/common/webapps
+2025-12-20 19:52:48,147 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar
+2025-12-20 19:52:48,147 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar
+2025-12-20 19:52:48,147 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar
+2025-12-20 19:52:48,147 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar
+2025-12-20 19:52:48,147 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/avro-1.7.7.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/avro-1.7.7.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-cli-1.2.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-cli-1.2.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-codec-1.15.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-codec-1.15.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-compress-1.21.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-compress-1.21.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-configuration2-2.8.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-configuration2-2.8.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-io-2.8.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-io-2.8.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-lang3-3.12.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-lang3-3.12.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-net-3.9.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-net-3.9.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/commons-text-1.10.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/commons-text-1.10.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/curator-client-5.2.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/curator-client-5.2.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/curator-framework-5.2.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/curator-framework-5.2.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/curator-recipes-5.2.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/curator-recipes-5.2.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/failureaccess-1.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/failureaccess-1.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/gson-2.9.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/gson-2.9.0.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/guava-27.0-jre.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/guava-27.0-jre.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/hadoop-annotations-3.3.6.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/hadoop-annotations-3.3.6.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/hadoop-auth-3.3.6.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/hadoop-auth-3.3.6.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/hadoop-shaded-guava-1.1.1.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/hadoop-shaded-guava-1.1.1.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/HikariCP-java7-2.4.12.jar
+2025-12-20 19:52:48,148 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/HikariCP-java7-2.4.12.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/httpclient-4.5.13.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/httpclient-4.5.13.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/httpcore-4.4.13.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/httpcore-4.4.13.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jackson-annotations-2.12.7.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jackson-annotations-2.12.7.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jackson-core-2.12.7.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jackson-core-2.12.7.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jackson-databind-2.12.7.1.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jackson-databind-2.12.7.1.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jakarta.activation-api-1.2.1.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jakarta.activation-api-1.2.1.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jersey-core-1.19.4.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jersey-core-1.19.4.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jersey-json-1.20.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jersey-json-1.20.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jersey-server-1.19.4.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jersey-server-1.19.4.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jersey-servlet-1.19.4.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jersey-servlet-1.19.4.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jettison-1.5.4.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jettison-1.5.4.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-http-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-http-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-io-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-io-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-security-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-security-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-server-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-server-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-servlet-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-servlet-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-util-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-util-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.51.v20230217.jar
+2025-12-20 19:52:48,149 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-webapp-9.4.51.v20230217.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-webapp-9.4.51.v20230217.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-xml-9.4.51.v20230217.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jetty-xml-9.4.51.v20230217.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jsch-0.1.55.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jsch-0.1.55.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/json-simple-1.1.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/json-simple-1.1.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jsr305-3.0.2.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jsr305-3.0.2.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kotlin-stdlib-1.4.10.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kotlin-stdlib-1.4.10.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/kotlin-stdlib-common-1.4.10.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/kotlin-stdlib-common-1.4.10.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/metrics-core-3.2.4.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/metrics-core-3.2.4.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-all-4.1.89.Final.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-all-4.1.89.Final.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-buffer-4.1.89.Final.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-buffer-4.1.89.Final.jar
+2025-12-20 19:52:48,150 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-dns-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-dns-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-haproxy-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-haproxy-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-http2-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-http2-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-http-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-http-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-memcache-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-memcache-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-mqtt-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-mqtt-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-redis-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-redis-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-smtp-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-smtp-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-socks-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-socks-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-stomp-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-stomp-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-xml-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-codec-xml-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-common-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-common-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-handler-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-handler-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-handler-proxy-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-handler-proxy-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-handler-ssl-ocsp-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-handler-ssl-ocsp-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-resolver-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-resolver-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-resolver-dns-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-resolver-dns-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-resolver-dns-classes-macos-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-resolver-dns-classes-macos-4.1.89.Final.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-resolver-dns-native-macos-4.1.89.Final-osx-aarch_64.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-resolver-dns-native-macos-4.1.89.Final-osx-aarch_64.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-resolver-dns-native-macos-4.1.89.Final-osx-x86_64.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-resolver-dns-native-macos-4.1.89.Final-osx-x86_64.jar
+2025-12-20 19:52:48,151 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-classes-epoll-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-classes-epoll-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-classes-kqueue-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-classes-kqueue-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-native-epoll-4.1.89.Final-linux-aarch_64.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-native-epoll-4.1.89.Final-linux-aarch_64.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-native-epoll-4.1.89.Final-linux-x86_64.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-native-epoll-4.1.89.Final-linux-x86_64.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-native-kqueue-4.1.89.Final-osx-aarch_64.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-native-kqueue-4.1.89.Final-osx-aarch_64.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-native-kqueue-4.1.89.Final-osx-x86_64.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-native-kqueue-4.1.89.Final-osx-x86_64.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-native-unix-common-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-native-unix-common-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-rxtx-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-rxtx-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-sctp-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-sctp-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-udt-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/netty-transport-udt-4.1.89.Final.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/nimbus-jose-jwt-9.8.1.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/nimbus-jose-jwt-9.8.1.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/okhttp-4.9.3.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/okhttp-4.9.3.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/okio-2.8.0.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/okio-2.8.0.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/paranamer-2.3.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/paranamer-2.3.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/re2j-1.1.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/re2j-1.1.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/reload4j-1.2.22.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/reload4j-1.2.22.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/snappy-java-1.1.8.2.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/snappy-java-1.1.8.2.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/stax2-api-4.2.1.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/stax2-api-4.2.1.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/token-provider-1.0.1.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/token-provider-1.0.1.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/woodstox-core-5.4.0.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/woodstox-core-5.4.0.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/zookeeper-3.6.3.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/zookeeper-3.6.3.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib/zookeeper-jute-3.6.3.jar
+2025-12-20 19:52:48,152 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib/zookeeper-jute-3.6.3.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-3.3.6-tests.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-3.3.6-tests.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-client-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-client-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-client-3.3.6-tests.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-client-3.3.6-tests.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.6-tests.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.6-tests.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-nfs-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-nfs-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.6.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.6-tests.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.6-tests.jar
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/jdiff
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/jdiff
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/lib
+2025-12-20 19:52:48,153 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/lib
+2025-12-20 19:52:48,154 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/sources
+2025-12-20 19:52:48,155 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/sources
+2025-12-20 19:52:48,155 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/hdfs/webapps
+2025-12-20 19:52:48,155 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/hdfs/webapps
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.6-tests.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.6-tests.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/jdiff
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/jdiff
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/lib-examples
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/lib-examples
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/mapreduce/sources
+2025-12-20 19:52:48,156 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/mapreduce/sources
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/aopalliance-1.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/aopalliance-1.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/asm-commons-9.4.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/asm-commons-9.4.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/asm-tree-9.4.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/asm-tree-9.4.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/bcpkix-jdk15on-1.68.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/bcpkix-jdk15on-1.68.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/bcprov-jdk15on-1.68.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/bcprov-jdk15on-1.68.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/ehcache-3.3.1.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/ehcache-3.3.1.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/fst-2.50.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/fst-2.50.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/giraph.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/giraph.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/guice-4.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/guice-4.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/guice-servlet-4.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/guice-servlet-4.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jackson-jaxrs-base-2.12.7.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jackson-jaxrs-base-2.12.7.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.12.7.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.12.7.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.12.7.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.12.7.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jakarta.xml.bind-api-2.3.2.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jakarta.xml.bind-api-2.3.2.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/java-util-1.9.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/java-util-1.9.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/javax.inject-1.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/javax.inject-1.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/javax.websocket-api-1.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/javax.websocket-api-1.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/javax.websocket-client-api-1.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/javax.websocket-client-api-1.0.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/javax-websocket-client-impl-9.4.51.v20230217.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/javax-websocket-client-impl-9.4.51.v20230217.jar
+2025-12-20 19:52:48,157 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/javax-websocket-server-impl-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/javax-websocket-server-impl-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jersey-client-1.19.4.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jersey-client-1.19.4.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jersey-guice-1.19.4.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jersey-guice-1.19.4.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jetty-annotations-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jetty-annotations-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jetty-client-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jetty-client-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jetty-jndi-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jetty-jndi-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jetty-plus-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jetty-plus-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jline-3.9.0.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jline-3.9.0.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/jna-5.2.0.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/jna-5.2.0.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/json-io-2.5.1.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/json-io-2.5.1.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/objenesis-2.6.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/objenesis-2.6.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/pagerank-compare.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/pagerank-compare.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/snakeyaml-2.0.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/snakeyaml-2.0.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/websocket-api-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/websocket-api-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/websocket-client-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/websocket-client-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/websocket-common-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/websocket-common-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/websocket-server-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/websocket-server-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib/websocket-servlet-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib/websocket-servlet-9.4.51.v20230217.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/csi
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/csi
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-api-3.3.6.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-api-3.3.6.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-catalog-webapp-3.3.6.war
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-catalog-webapp-3.3.6.war
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.3.6.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.3.6.jar
+2025-12-20 19:52:48,158 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-mawo-core-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-mawo-core-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-client-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-client-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-registry-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-registry-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-common-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-common-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-router-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-router-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-tests-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-tests-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-services-api-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-services-api-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-services-core-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-services-core-3.3.6.jar
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/lib
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/lib
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/sources
+2025-12-20 19:52:48,159 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/sources
+2025-12-20 19:52:48,160 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/test
+2025-12-20 19:52:48,160 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/test
+2025-12-20 19:52:48,160 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/timelineservice
+2025-12-20 19:52:48,160 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/timelineservice
+2025-12-20 19:52:48,160 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/webapps
+2025-12-20 19:52:48,160 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/webapps
+2025-12-20 19:52:48,161 INFO yarn.YarnUtils: Class path name /usr/local/hadoop/share/hadoop/yarn/yarn-service-examples
+2025-12-20 19:52:48,161 INFO yarn.YarnUtils: base path checking /usr/local/hadoop/share/hadoop/yarn/yarn-service-examples
+2025-12-20 19:52:48,161 INFO yarn.YarnUtils: Class path name /root/group8_pagerank_comparison/pagerank-compare.jar
+2025-12-20 19:52:48,161 INFO yarn.YarnUtils: base path checking /root/group8_pagerank_comparison/pagerank-compare.jar
+2025-12-20 19:52:48,165 INFO yarn.GiraphYarnClient: ApplicationSumbissionContext for GiraphApplicationMaster launch container is populated.
+2025-12-20 19:52:48,165 INFO yarn.GiraphYarnClient: Submitting application to ASM
+2025-12-20 19:52:48,376 INFO impl.YarnClientImpl: Submitted application application_1766231546618_0001
+2025-12-20 19:52:48,376 INFO yarn.GiraphYarnClient: Got new appId after submission :application_1766231546618_0001
+2025-12-20 19:52:48,376 INFO yarn.GiraphYarnClient: GiraphApplicationMaster container request was submitted to ResourceManager for job: Giraph: PageRankGiraph
+2025-12-20 19:52:49,180 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 0.91 secs
+2025-12-20 19:52:49,181 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: ACCEPTED, Containers used: 1
+2025-12-20 19:52:53,199 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 4.93 secs
+2025-12-20 19:52:53,200 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:52:57,215 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 8.94 secs
+2025-12-20 19:52:57,216 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:01,229 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 12.96 secs
+2025-12-20 19:53:01,229 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:05,241 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 16.97 secs
+2025-12-20 19:53:05,241 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:09,251 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 20.98 secs
+2025-12-20 19:53:09,252 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:13,262 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 24.99 secs
+2025-12-20 19:53:13,263 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:17,274 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 29.00 secs
+2025-12-20 19:53:17,274 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:21,285 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 33.01 secs
+2025-12-20 19:53:21,285 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:25,295 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 37.03 secs
+2025-12-20 19:53:25,296 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:29,305 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 41.03 secs
+2025-12-20 19:53:29,305 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:33,314 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 45.04 secs
+2025-12-20 19:53:33,314 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:37,325 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 49.06 secs
+2025-12-20 19:53:37,326 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:41,339 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 53.07 secs
+2025-12-20 19:53:41,339 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:45,349 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 57.08 secs
+2025-12-20 19:53:45,349 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:49,358 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 61.09 secs
+2025-12-20 19:53:49,359 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:53,368 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 65.10 secs
+2025-12-20 19:53:53,368 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:53:57,377 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 69.11 secs
+2025-12-20 19:53:57,377 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:01,386 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 73.12 secs
+2025-12-20 19:54:01,386 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:05,395 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 77.13 secs
+2025-12-20 19:54:05,395 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:09,404 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 81.13 secs
+2025-12-20 19:54:09,404 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:13,413 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 85.14 secs
+2025-12-20 19:54:13,413 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:17,422 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 89.15 secs
+2025-12-20 19:54:17,422 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:21,431 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 93.16 secs
+2025-12-20 19:54:21,431 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:25,439 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 97.17 secs
+2025-12-20 19:54:25,439 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:29,448 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 101.18 secs
+2025-12-20 19:54:29,448 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:33,457 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 105.19 secs
+2025-12-20 19:54:33,457 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:37,466 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 109.20 secs
+2025-12-20 19:54:37,466 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:41,474 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 113.20 secs
+2025-12-20 19:54:41,474 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:45,482 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 117.21 secs
+2025-12-20 19:54:45,482 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:49,490 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 121.22 secs
+2025-12-20 19:54:49,490 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:53,498 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 125.23 secs
+2025-12-20 19:54:53,499 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:54:57,506 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 129.24 secs
+2025-12-20 19:54:57,506 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:55:01,514 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 133.24 secs
+2025-12-20 19:55:01,514 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:55:05,523 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 137.25 secs
+2025-12-20 19:55:05,523 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:55:09,531 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 141.26 secs
+2025-12-20 19:55:09,532 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:55:13,539 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 145.27 secs
+2025-12-20 19:55:13,539 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:55:17,546 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 149.28 secs
+2025-12-20 19:55:17,546 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:55:21,554 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 153.28 secs
+2025-12-20 19:55:21,554 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:55:25,562 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 157.29 secs
+2025-12-20 19:55:25,562 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:55:29,569 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 161.30 secs
+2025-12-20 19:55:29,569 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:55:33,577 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 165.31 secs
+2025-12-20 19:55:33,577 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:55:37,584 INFO yarn.GiraphYarnClient: Giraph: PageRankGiraph, Elapsed: 169.31 secs
+2025-12-20 19:55:37,584 INFO yarn.GiraphYarnClient: appattempt_1766231546618_0001_000001, State: RUNNING, Containers used: 3
+2025-12-20 19:55:39,190 INFO yarn.GiraphYarnClient: Cleaning up HDFS distributed cache directory for Giraph job.
+2025-12-20 19:55:39,198 INFO yarn.GiraphYarnClient: Completed Giraph: PageRankGiraph: KILLED, total running time: 2 minutes, 50 seconds.
